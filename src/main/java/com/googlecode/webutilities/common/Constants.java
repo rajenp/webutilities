@@ -129,23 +129,4 @@ public final class Constants {
 
     private Constants() {
     } //non instantiable
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-        /*Executor exec = Executors.newCachedThreadPool();
-        for(int i = 0; i < 20; i++) {
-            final int v = i;
-            exec.execute(new Runnable() {
-                @Override
-                public void run() {
-                    System.out.println(v);
-                }
-            });
-        }*/
-
-
-        LongStream.rangeClosed(0, 5).map(n -> n * n).forEach(s -> System.out.print(s + " "));
-
-    }
-
 }
